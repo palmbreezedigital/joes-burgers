@@ -150,6 +150,7 @@ a {
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+  max-height: 100%;
 }
 
 .art {
@@ -210,18 +211,28 @@ header {
 
   .yellow-button {
     border: 2px solid white;
-    padding: 3% 5%;
+    padding: 2% 8%;
     text-align: center;
     font-family: 'Permanent Marker', cursive; 
     color:#FFCB47;
+    display: inline-block;
   }
 
   .red-button {
     border: 2px solid white;
-    padding: 3% 8%;
+    padding: 2% 8%;
     text-align: center;
     font-family: 'Permanent Marker', cursive; 
     color: #C81404;
+    display: inline-block;
+  }
+
+  .red-button:hover {
+    background-color: white;
+  }
+
+  .yellow-button:hover {
+    background-color: white;
   }
 
 
