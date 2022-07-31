@@ -6,10 +6,6 @@ grey: #292829;
 
 */
 
-/* Temporary Styles */
-body {
-    border: 2px solid;
-}
 
 /* CSS RESET */
 * {
@@ -112,13 +108,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
 }
 
-.yellow h1,h2,h3,h4,h5,h6 {
-    color: #FFCB47;
-}
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
 
 .red h1,h2,h3,h4,h5,h6 {
     color: #C81404;
 }
+
 
 p {
   line-height: 1.4; 
@@ -146,6 +144,7 @@ a {
   color: white;
 }
 
+
 .bg-image {
   background-color: #292829; /* Set a fall-back color while images are loading */ 
   background-size: cover;
@@ -153,6 +152,16 @@ a {
   background-repeat: no-repeat;
 }
 
+.art {
+  background-image: url('images/art-background.jpg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texture {
+  background-image: url('images/white-texture-thin.png'); 
+}
 
 .layered-burger {
     background-image: url('images/burger-1.jpg');
@@ -163,7 +172,11 @@ a {
 }
 
 .egg-burger {
-    background-image: url('images/burger-3.jpg')
+    background-image: url('images/burger-3.jpg');
+}
+
+.team {
+  background-image: url('images/team.jpg');
 }
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
@@ -197,7 +210,7 @@ header {
 
   .yellow-button {
     border: 2px solid white;
-    padding: 2%;
+    padding: 3% 5%;
     text-align: center;
     font-family: 'Permanent Marker', cursive; 
     color:#FFCB47;
@@ -205,10 +218,11 @@ header {
 
   .red-button {
     border: 2px solid white;
-    padding: 2%;
+    padding: 3% 8%;
     text-align: center;
     font-family: 'Permanent Marker', cursive; 
     color: #C81404;
   }
+
 
 
