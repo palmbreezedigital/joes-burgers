@@ -79,6 +79,9 @@ img { max-width: 100%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
 
+.tall-20    {min-height: 20vh;}
+.tall-30    {min-height: 30vh;}
+.tall-40    {min-height: 40vh;}
 .tall-50    {min-height: 50vh;}
 .tall-60    {min-height: 60vh;}
 .tall-70    {min-height: 70vh;}
@@ -153,6 +156,10 @@ a {
   max-height: 100%;
 }
 
+.burger-banner {
+  background-image: url('/images/burger-banner.png');
+}
+
 .art {
   background-image: url('images/art-background.jpg');
   background-size: 60%;
@@ -201,6 +208,7 @@ header {
     padding: 1% 5%;
     background-color: transparent;
   }
+
   
   .emphasis-button {
     border: 2px solid;
@@ -236,4 +244,7 @@ header {
   }
 
 
-
+footer h4{
+  font-family: 'Montserrat';
+  font-weight: 700;
+}

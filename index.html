@@ -3,6 +3,9 @@
 	<head>
     	<!-- this is where you give extra information to the browser that you don't want to actually show up on the page -->
     	<title> This is your website's title </title>
+
+		<!-- Viewport meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	
     	<!-- This is our Gridlex stylesheet-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -32,7 +35,7 @@
 		</header>
 		
 		<!------------------ Banner -------------------------->
-		<section class="bg-image egg-burger grid-middle padded red tall-70">
+		<section class="bg-image burger-banner grid-middle padded red tall-70">
 			<div class="col-12 text-center">
 				<h1>Prepare Your Tastebuds</h1>
 				<a href="#" class="red-button">View Menu</a>
@@ -70,13 +73,52 @@
 
 		<!--------------- Order Section ------------------->
 		<section class="grid-spaceAround padded">
-			<div class="col-5 bg-image egg-burger tall-30">
+			<div class="col-5 grid">
+				<img src="/images/burger-3.jpg">
+				<div class="col-12-bottom text-center col-5">
+					<a href="#" class="yellow-button">Place Your Order Today!</a>
+				</div>
 			</div>
-			<div class="col-5 bg-image layered-burger tall-60"> </div>
-			<div class="text-right col-5">
-				<a href="#" class="yellow-button">Order Now</a>
+			<div class="col-5">
+				<img src="/images/burger-1.jpg">
+			</div>
+			
+		</section>
+
+		<!------------- Map Section ------------------->
+		<section class="grid padded bg-dark tall-40">
+			<div class="col-6_sm-12 map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.946790262726!2d-85.43351181309534!3d32.607601448293565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ced6665680749%3A0x8599b8d21b57813b!2sMoe&#39;s%20Original%20BBQ%20-%20Auburn!5e0!3m2!1sen!2sus!4v1660072139609!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="col-6_sm-12-middle padded">
+				<h3> Visit Us </h3>
+				<p>123 Ketchup Ln<br>Austin, TX 92935</p>
+				<p><strong>Hours</strong><br>Mon-Fri: 10am-10pm<br>Sat: 11am-2am<br>Sun:10am-8pm</p>
+				<p><strong>Phone</strong><br>555-555-5555</p>
 			</div>
 		</section>
+
+		<!----------- Footer ------------------->
+
+		<footer class="padded grid text-center">
+			<div class="col-4 text-left">
+				<h4>Contact</h4>
+				<p>Telephone</p>
+				<p>email</p>
+			</div>
+			<div class="col-4 newsletter">
+				<h4>Give us the goods</h4>
+				<form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+					<input type="text" name="name" placeholder="Your Name">
+					<input type="email" name="_replyto" placeholder="Your Email">
+					<input type="submit" value="Send" class="button-solid">
+				  </form>
+			</div>
+			<div class="col-4 text-right">
+				<h4>Follow Us</h4>
+			</div>
+
+		</footer>
 
 	</body>
 </html>
