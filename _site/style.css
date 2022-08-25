@@ -1,0 +1,250 @@
+/* Colors
+yellow: #FFCB47;
+red: #C81404;
+grey: #292829;
+
+
+*/
+
+
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img { max-width: 100%; }
+
+/* Optional padding to override default gridlex columns */ 
+[class*=col] { padding: 0; }
+
+/* Padding Utility Classes */ 
+
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
+.tall-20    {min-height: 20vh;}
+.tall-30    {min-height: 30vh;}
+.tall-40    {min-height: 40vh;}
+.tall-50    {min-height: 50vh;}
+.tall-60    {min-height: 60vh;}
+.tall-70    {min-height: 70vh;}
+.tall-80    {min-height: 80vh;}
+.tall-90    {min-height: 90vh;}
+.tall-100   {min-height: 100vh;}
+
+
+
+/* Typography Styles */
+
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-center  { text-align: center; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('images/smokey-grey-backgournd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive;  
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+
+.red h1,h2,h3,h4,h5,h6 {
+    color: #C81404;
+}
+
+
+p {
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Background */
+
+.bg-dark { 
+  background-color: inherit; 
+  color: white;
+}
+
+
+.bg-image {
+  background-color: #292829; /* Set a fall-back color while images are loading */ 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  max-height: 100%;
+}
+
+.burger-banner {
+  background-image: url('/images/burger-banner.png');
+}
+
+.art {
+  background-image: url('images/art-background.jpg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texture {
+  background-image: url('images/white-texture-thin.png'); 
+}
+
+.layered-burger {
+    background-image: url('images/burger-1.jpg');
+}
+
+.burger {
+    background-image: url('images/burger-2.jpg');
+}
+
+.egg-burger {
+    background-image: url('images/burger-3.jpg');
+}
+
+.team {
+  background-image: url('images/team.jpg');
+}
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+.landscape     { padding-bottom: 66%; }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+/* Header & Footer */
+
+header {
+    padding: 1% 5%;
+    background-color: transparent;
+  }
+
+  
+  .emphasis-button {
+    border: 2px solid;
+    margin-left: 0.5rem;
+  }
+
+  /* Buttons */
+
+  .yellow-button {
+    border: 2px solid white;
+    padding: 2% 8%;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive; 
+    color:#FFCB47;
+    display: inline-block;
+  }
+
+  .red-button {
+    border: 2px solid white;
+    padding: 2% 8%;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive; 
+    color: #C81404;
+    display: inline-block;
+  }
+
+  .red-button:hover {
+    background-color: white;
+  }
+
+  .yellow-button:hover {
+    background-color: white;
+  }
+
+
+footer h4{
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
