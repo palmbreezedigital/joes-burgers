@@ -1,7 +1,23 @@
---- 
+---
 layout: default
---- 
-
+title: Homepage
+fruit:
+-  title: Apple 
+   description: Exciting things are happening
+-  title: Pineapple
+   description: Woof woof woof!
+-  title: Pear
+   description: Free foods to make friends
+-  title: Banana
+   description: Free foods to make friends
+---
 <section>
-    <h1> This is the About Page </h1>
+
+    {% for item in page.fruit %}
+    <div class="card">
+        <h2> {{item.title}} </h2>
+        <p> {{item.description}} </p>
+    </div>
+    {% endfor %}
+
 </section>
