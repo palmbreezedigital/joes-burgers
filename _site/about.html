@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<!-- this is where you give extra information to the browser that you don't want to actually show up on the page -->
+    	<title> This is your website's title </title>
+
+		<!-- Viewport meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+    	<!-- This is our Gridlex stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    	
+    	<!-- This is our Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Permanent+Marker&display=swap" rel="stylesheet">	
+    	
+    	<!-- This is our main stylesheet, this always goes last--> 
+    	<link rel="stylesheet" href="style.css"> 	
+	</head>
+
+    <body>
+    	<!-- Navigation --> 
+		<header class="grid padded-sm yellow">
+			<div class="col-4-middle">
+			  <a href="/">
+				<h2 class="logo"> LOGO </h2>
+			  </a>
+			</div>
+			<nav class="col-8-middle text-right">
+			  <a href="/about.html"> About </a>
+			  <a href="#"> Menu </a>
+			  <a href="#"> Contact </a>
+			  <a href="#" class="emphasis-button"> Call to Action </a>
+			</nav>
+		</header>
+
+        <section>
+    <h1> This is the About Page </h1>
+</section>
+
+
+		<!----------- Footer ------------------->
+
+		<footer class="padded grid text-center">
+			<div class="col-4 text-left">
+				<h4>Contact</h4>
+				<p>Telephone</p>
+				<p>email</p>
+			</div>
+			<div class="col-4 newsletter">
+				<h4>Give us the goods</h4>
+				<form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+					<input type="text" name="name" placeholder="Your Name">
+					<input type="email" name="_replyto" placeholder="Your Email">
+					<input type="submit" value="Send" class="button-solid">
+				  </form>
+			</div>
+			<div class="col-4 text-right">
+				<h4>Follow Us</h4>
+			</div>
+
+		</footer>
+    </body>
+</html>
