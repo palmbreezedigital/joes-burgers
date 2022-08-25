@@ -162,8 +162,8 @@ a {
 
 .art {
   background-image: url('images/art-background.jpg');
-  background-size: 60%;
-  background-position: center;
+  background-size: 77vw;
+  background-position: 250%;
   background-repeat: no-repeat;
 }
 
@@ -177,6 +177,10 @@ a {
 
 .burger {
     background-image: url('images/burger-2.jpg');
+}
+
+.img-height {
+  min-height: calc(40vw + 15% + 1rem);
 }
 
 .egg-burger {
@@ -248,3 +252,55 @@ footer h4{
   font-family: 'Montserrat';
   font-weight: 700;
 }
+
+input {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e67e22;
+  /* featured color */
+}
+
+textarea {
+  min-height: 7em;
+}
+
+input[type="submit"] {
+  width: auto;
+  display: block;
+}
+
+form [class*=col-] {
+  padding: 5px;
+}
+
+.email-signup input {
+  width: 30%;
+  display: inline-block;
+  max-width: 250px;
+  margin-top:1rem;
+}
+
+.email-signup .button-solid {
+  padding: 0.8em;
+  border-radius: 0;
+  font-size: 1rem;
+}
+form .button {
+  width:100%;
+}
+  @media(max-width:768px) {
+   .email-signup input {
+     width: 100%;
+     max-width: 100%;
+   }
+ }
