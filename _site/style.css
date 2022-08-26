@@ -169,6 +169,11 @@ a {
 
 .texture {
   background-image: url('images/white-texture-thin.png'); 
+  position: absolute;
+  width: 100%;
+  top: 720px;
+  left: 0%;
+  z-index: -1;
 }
 
 .layered-burger {
@@ -191,6 +196,13 @@ a {
   background-image: url('images/team.jpg');
 }
 
+/* Video */
+
+.bg-video {
+  position: fixed;
+  z-index: -1;
+}
+
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
 .landscape     { padding-bottom: 66%; }
@@ -205,19 +217,6 @@ a {
 .bg-pos-l { background-position: left; }
 .bg-pos-r { background-position: right; }
 
-
-/* Header & Footer */
-
-header {
-    padding: 1% 5%;
-    background-color: transparent;
-  }
-
-  
-  .emphasis-button {
-    border: 2px solid;
-    margin-left: 0.5rem;
-  }
 
   /* Buttons */
 
@@ -248,9 +247,37 @@ header {
   }
 
 
-footer h4{
+footer h3{
   font-family: 'Montserrat';
   font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Header & Footer */
+
+header {
+  padding: 1% 5%;
+}
+
+header a {
+  padding: 0.5rem;
+}
+
+header a:hover {
+  color: #C81404;
+}
+
+.emphasis-button {
+  border: 2px solid;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+.emphasis-button:hover {
+  background-color: white;
+  color: #C81404; 
+  border: white;
 }
 
 input {
@@ -260,7 +287,6 @@ input {
   display: block;
   width: 100%;
   font-size: 1rem;
-  vertical-align: top;
 }
 
 input:focus,
